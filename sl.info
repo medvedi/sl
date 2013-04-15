@@ -53,6 +53,7 @@ dependencies[] = variable
 dependencies[] = views
 dependencies[] = wysiwyg
 dependencies[] = libraries
+dependencies[] = apachesolr
 
 
 ; custom: re-usable modules

@@ -162,6 +162,11 @@ projects[libraries][download][type] = git
 projects[libraries][download][url] = http://git.drupal.org/project/libraries.git
 projects[libraries][download][tag] = 7.x-2.1
 
+projects[apachesolr][subdir] = "contrib"
+projects[apachesolr][download][type] = git
+projects[apachesolr][download][url] = http://git.drupal.org/project/apachesolr.git
+projects[apachesolr][download][tag] = 7.x-1.2
+
 
 ; libraries
 
