@@ -43,8 +43,8 @@ function mox_preprocess_page(&$vars) {
     }
   }
   
-  $background_image = theme_get_setting('mox_image');
+  //$background_image = theme_get_setting('mox_image');
   
   // Assign header image.
-  $vars['background_image'] = theme('image', array('path' => $background_image->uri, 'width' => '', 'height' => ''));
+  //$vars['background_image'] = theme('image', array('path' => $background_image->uri, 'width' => '', 'height' => ''));
 }
