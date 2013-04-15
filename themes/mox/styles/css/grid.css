@@ -1,0 +1,86 @@
+/**
+ * @file grid.css
+ *
+ * Media queries and grid.
+ *
+ * These follow after primary styles so they will successfully override.
+ */
+/* Import master */
+/**
+ * @file master.css.less
+ *
+ * This theme leverages the use of LESS CSS pre-processor (http://lesscss.org).
+ *
+ * These are the global defaults. Override or add more as needed.
+ */
+/* Defaults which you can freely override */
+/* Utility variable — you should never need to modify this */
+/* Set @total-width to 100% for a fluid layout */
+/* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
+/**
+ * Using border-box for elastic gutters.
+ *
+ * Beware! IE7 does not support this.
+ */
+#container * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html */
+/**
+ * Layout
+ */
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#container header,
+#container #navigation,
+#container #footer {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+  *width: 939.9479166666666px;
+  *margin: 0 9.947916666666666px;
+}
+#container #main > #content {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  *width: 619.9479166666666px;
+  *margin: 0 9.947916666666666px;
+}
+#container .column.sidebar {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  *width: 299.9479166666667px;
+  *margin: 0 9.947916666666666px;
+}
+/** 
+ * @media screen and (min-width: 760px) 
+ *
+ * min-width / font-size = target-width
+ */
+@media screen and (min-width: 47.5em) {
+  body {
+    /* Reset font-size to 14px */
+    font-size: 1em;
+  }
+}
+@media all and (orientation: portrait) {
+  /* Style adjustments for portrait mode goes here */
+}
+@media all and (orientation: landscape) {
+  /* Style adjustments for landscape mode goes here */
+}
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+}
